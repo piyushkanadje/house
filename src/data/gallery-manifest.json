@@ -1,0 +1,404 @@
+{
+  "photos": [
+    {
+      "src": "/assets/gallery/photos/room-11.jpg",
+      "type": "image",
+      "category": "rooms",
+      "alt": "Guest room at Srushti Farm House Donje Pune"
+    },
+    {
+      "src": "/assets/gallery/photos/room-112.jpg",
+      "type": "image",
+      "category": "rooms",
+      "alt": "Group stay room at Srushti Farm House Sinhgad"
+    },
+    {
+      "src": "/assets/gallery/photos/rooms-11.jpg",
+      "type": "image",
+      "category": "rooms",
+      "alt": "Rooms at Srushti Farm House near Sinhgad"
+    },
+    {
+      "src": "/assets/gallery/photos/rooms-main.jpg",
+      "type": "image",
+      "category": "rooms",
+      "alt": "Main guest room at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/rooms-2.jpg",
+      "type": "image",
+      "category": "rooms",
+      "alt": "Family room with multiple beds at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/rooms-3.jpg",
+      "type": "image",
+      "category": "rooms",
+      "alt": "Spacious group room at Srushti Farm House Pune"
+    },
+    {
+      "src": "/assets/gallery/photos/rooms-outdoor.jpg",
+      "type": "image",
+      "category": "rooms",
+      "alt": "Outdoor veranda seating at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/pool-2.jpg",
+      "type": "image",
+      "category": "pool",
+      "alt": "Swimming pool at Srushti Farm House Sinhgad"
+    },
+    {
+      "src": "/assets/gallery/photos/pool-activity-1.jpg",
+      "type": "image",
+      "category": "pool",
+      "alt": "Pool deck and swimming pool at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-15.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Green surroundings at Srushti Farm House Donje"
+    },
+    {
+      "src": "/assets/gallery/photos/dome-night-lawn.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Geodesic dome on the lawn at night, Srushti Farm House Donje"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-9.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Weekend getaway nature at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-14.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Nature views at Srushti Farm House Pune"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-view.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Scenic nature view at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-1.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Landscaped grounds at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-11.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Trees and greenery at Srushti Farm House Sinhgad"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-12.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Garden area at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-13.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Property grounds at Srushti Farm House Donje"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-4.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Tree-lined property at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-8.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Natural setting at Srushti Farm House Pune"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-heic.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Lush green lawn at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-main.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Farmhouse nature and landscape Donje Pune"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-2.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Sinhgad area greenery at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/nature-3.jpg",
+      "type": "image",
+      "category": "nature",
+      "alt": "Outdoor nature at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/pool-tiled-deck.jpg",
+      "type": "image",
+      "category": "activities",
+      "alt": "Swimming pool activity at Srushti Farm House Sinhgad"
+    },
+    {
+      "src": "/assets/gallery/videos/activity-raindance-video.mp4",
+      "type": "video",
+      "category": "activities",
+      "alt": "Rain dance video at Srushti Farm House Donje Pune",
+      "poster": "/assets/gallery/posters/activity-raindance-video.jpg"
+    },
+    {
+      "src": "/assets/gallery/photos/activity-screen.jpg",
+      "type": "image",
+      "category": "activities",
+      "alt": "Outdoor screen and entertainment at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/activity-4.jpg",
+      "type": "image",
+      "category": "activities",
+      "alt": "Games and fun at Srushti Farm House Pune"
+    },
+    {
+      "src": "/assets/gallery/photos/activity-5.jpg",
+      "type": "image",
+      "category": "activities",
+      "alt": "Recreation on the lawn at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/activity-birthday.jpg",
+      "type": "image",
+      "category": "activities",
+      "alt": "Birthday activities at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/activity-campfire.jpg",
+      "type": "image",
+      "category": "activities",
+      "alt": "Campfire at Srushti Farm House Sinhgad"
+    },
+    {
+      "src": "/assets/gallery/photos/activity-lawn-games.jpg",
+      "type": "image",
+      "category": "activities",
+      "alt": "Lawn games at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/activity-lawn.jpg",
+      "type": "image",
+      "category": "activities",
+      "alt": "Open lawn for activities at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/activity-main.jpg",
+      "type": "image",
+      "category": "activities",
+      "alt": "Main activity area at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/activity-tents.jpg",
+      "type": "image",
+      "category": "activities",
+      "alt": "Tents and outdoor setup at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/entrance-signboard.jpg",
+      "type": "image",
+      "category": "activities",
+      "alt": "Srushti Farm House entrance signboard Donje Sinhgad"
+    },
+    {
+      "src": "/assets/gallery/photos/food-2.jpg",
+      "type": "image",
+      "category": "food",
+      "alt": "Outdoor dining at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/food-9.jpg",
+      "type": "image",
+      "category": "food",
+      "alt": "Outdoor thali dinner at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/food-4.jpg",
+      "type": "image",
+      "category": "food",
+      "alt": "Group meal at Srushti Farm House Sinhgad"
+    },
+    {
+      "src": "/assets/gallery/photos/food-8-a.jpg",
+      "type": "image",
+      "category": "food",
+      "alt": "Fresh food served at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/food-main.jpg",
+      "type": "image",
+      "category": "food",
+      "alt": "Unlimited meals at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/food-10.jpg",
+      "type": "image",
+      "category": "food",
+      "alt": "Dining spread at Srushti Farm House Pune"
+    },
+    {
+      "src": "/assets/gallery/photos/food-5.jpg",
+      "type": "image",
+      "category": "food",
+      "alt": "Veg and non-veg meals at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/food-6.jpg",
+      "type": "image",
+      "category": "food",
+      "alt": "Group lunch at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/food-8-b.jpg",
+      "type": "image",
+      "category": "food",
+      "alt": "Farmhouse dining at Srushti Farm House Donje"
+    },
+    {
+      "src": "/assets/gallery/photos/event-night-lawn.jpg",
+      "type": "image",
+      "category": "events",
+      "alt": "Night event on the lawn at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/event-5.jpg",
+      "type": "image",
+      "category": "events",
+      "alt": "Celebration at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/event-6.jpg",
+      "type": "image",
+      "category": "events",
+      "alt": "Group event at Srushti Farm House Pune"
+    },
+    {
+      "src": "/assets/gallery/photos/event-8-collage.jpg",
+      "type": "image",
+      "category": "events",
+      "alt": "Events and celebrations collage at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/event-5b.jpg",
+      "type": "image",
+      "category": "events",
+      "alt": "Birthday and family event at Srushti Farm House"
+    },
+    {
+      "src": "/assets/gallery/photos/event-buffet-night.jpg",
+      "type": "image",
+      "category": "events",
+      "alt": "Buffet dinner night event at Srushti Farm House"
+    }
+  ],
+  "videos": [
+    {
+      "src": "/assets/gallery/videos/rooms-video.mp4",
+      "type": "video",
+      "category": "events",
+      "alt": "Rooms and stay video at Srushti Farm House",
+      "poster": "/assets/gallery/posters/rooms-video.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/pool-video-1.mp4",
+      "type": "video",
+      "category": "pool",
+      "alt": "Swimming pool video at Srushti Farm House Sinhgad",
+      "poster": "/assets/gallery/posters/pool-video-1.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/pool-video-3.mp4",
+      "type": "video",
+      "category": "pool",
+      "alt": "Pool area video at Srushti Farm House Pune",
+      "poster": "/assets/gallery/posters/pool-video-3.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/nature-video-1.mp4",
+      "type": "video",
+      "category": "nature",
+      "alt": "Nature and grounds video at Srushti Farm House",
+      "poster": "/assets/gallery/posters/nature-video-1.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/nature-video-2.mp4",
+      "type": "video",
+      "category": "nature",
+      "alt": "Scenic property video at Srushti Farm House Donje",
+      "poster": "/assets/gallery/posters/nature-video-2.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/activity-bluetooth-video.mp4",
+      "type": "video",
+      "category": "activities",
+      "alt": "Activities and music at Srushti Farm House",
+      "poster": "/assets/gallery/posters/activity-bluetooth-video.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/activity-video.mp4",
+      "type": "video",
+      "category": "activities",
+      "alt": "Outdoor activities video at Srushti Farm House",
+      "poster": "/assets/gallery/posters/activity-video.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/activity-event-1-video.mp4",
+      "type": "video",
+      "category": "activities",
+      "alt": "Outdoor activities and games video at Srushti Farm House",
+      "poster": "/assets/gallery/posters/activity-event-1-video.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/event-video-9.mp4",
+      "type": "video",
+      "category": "events",
+      "alt": "Party and gathering video at Srushti Farm House",
+      "poster": "/assets/gallery/posters/event-video-9.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/event-video-3.mp4",
+      "type": "video",
+      "category": "events",
+      "alt": "Outdoor event video at Srushti Farm House Sinhgad",
+      "poster": "/assets/gallery/posters/event-video-3.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/event-video-main.mp4",
+      "type": "video",
+      "category": "events",
+      "alt": "Wedding and event video at Srushti Farm House",
+      "poster": "/assets/gallery/posters/event-video-main.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/event-video-3b.mp4",
+      "type": "video",
+      "category": "activities",
+      "alt": "Celebration video at Srushti Farm House Pune",
+      "poster": "/assets/gallery/posters/event-video-3b.jpg"
+    },
+    {
+      "src": "/assets/gallery/videos/event-video-4.mp4",
+      "type": "video",
+      "category": "events",
+      "alt": "Group event video at Srushti Farm House Donje",
+      "poster": "/assets/gallery/posters/event-video-4.jpg"
+    }
+  ]
+}
