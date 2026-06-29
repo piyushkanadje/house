@@ -21,15 +21,24 @@ export default function Location() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6 items-start">
-          <div className="rounded-2xl overflow-hidden shadow-2xl aspect-video lg:aspect-auto lg:min-h-[320px]">
-            <iframe
-              src={site.mapsEmbed}
-              title="Srushti Farm House location"
-              className="w-full h-full min-h-[280px] border-0"
+          <a
+            href={site.mapsDirections}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${t.location.address.name} — ${t.common.getDirections}`}
+            className="group relative block rounded-2xl overflow-hidden shadow-2xl aspect-video lg:aspect-auto lg:min-h-[320px]"
+          >
+            <img
+              src={site.mapImage}
+              alt={`Map showing ${t.location.address.name}`}
+              className="w-full h-full min-h-[280px] object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
             />
-          </div>
+            <span className="absolute bottom-3 right-3 inline-flex items-center gap-2 px-4 py-2 bg-gold text-forest font-semibold rounded-full text-sm shadow-lg opacity-95 group-hover:opacity-100 transition-opacity">
+              <Navigation className="w-4 h-4" />
+              {t.common.getDirections}
+            </span>
+          </a>
           <div className="bg-white/5 rounded-2xl p-6 border border-white/10 space-y-6">
             <div className="flex items-start gap-3">
               <MapPin className="w-5 h-5 text-gold mt-1 flex-shrink-0" />

@@ -7,11 +7,11 @@ export const site = {
     'https://customer-assets.emergentagent.com/job_pixel-perfect-clone-61/artifacts/3cf7u90t_WhatsApp%20Video%202026-05-27%20at%2012.10.01%20AM.mp4',
   heroPoster: '/assets/images/hero-img-1759.jpg',
   ogImage: '/assets/images/gallery-pool-01.jpeg',
+  mapImage: '/assets/images/map-location.png',
   mapsEmbed:
-    'https://www.google.com/maps?q=CQ57%2B7F+Pune,+Maharashtra,+India&output=embed',
-  mapsDirections:
-    'https://www.google.com/maps/search/?api=1&query=CQ57%2B7F+Pune,+Maharashtra,+India',
-  googleMapsUrl: 'https://maps.app.goo.gl/gg5f5si3bEP9mKn87',
+    'https://www.google.com/maps?q=Srushti+Farm+House,+Sinhgad,+Donje,+Pune&output=embed',
+  mapsDirections: 'https://maps.app.goo.gl/5uZjdHJuyxR4ScDP7',
+  googleMapsUrl: 'https://maps.app.goo.gl/5uZjdHJuyxR4ScDP7',
   geo: {
     latitude: 18.4371,
     longitude: 73.7553,
@@ -25,7 +25,7 @@ export const site = {
     country: 'IN',
   },
   sameAs: [
-    'https://maps.app.goo.gl/gg5f5si3bEP9mKn87',
+    'https://maps.app.goo.gl/5uZjdHJuyxR4ScDP7',
     'https://www.justdial.com/Pune/Srushti-Farm-House-Sinhgad-Donje-Pune-Opposite-Surajya-Donje/020PXX20-XX20-181127203410-L5I5_BZDET',
     'https://www.instagram.com/srushti_farm_sinhgad_pune',
     'https://www.facebook.com/share/1JKNujGrQY/',
