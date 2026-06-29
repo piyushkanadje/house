@@ -63,7 +63,7 @@ const en: Translations = {
       { title: 'Lawn Games' },
     ],
     indoor: [
-      { title: 'Karaoke / Bluetooth Music' },
+      { title: 'Karaoke-Bluetooth Music' },
       { title: 'Indoor Games' },
       { title: 'Chess' },
       { title: 'Carrom' },
@@ -208,7 +208,7 @@ const en: Translations = {
     phoneLabel: 'Phone',
     vistaAlt: 'Sinhgad Fort view from Srushti Farm House terrace near Pune',
     address: {
-      name: 'Srushti Farm House, Sinhgad, Donje',
+      name: 'Srushti Farm House, Sinhgad, Donje, Pune',
       line2: 'Donje, Sinhgad',
       line3: 'Pune, Maharashtra 411025',
     },

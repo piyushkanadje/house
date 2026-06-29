@@ -63,7 +63,7 @@ const hi: Translations = {
       { title: 'लॉन गेम्स' },
     ],
     indoor: [
-      { title: 'Karaoke / ब्लूटूथ म्यूज़िक' },
+      { title: 'Karaoke-ब्लूटूथ म्यूज़िक' },
       { title: 'इंडोर गेम्स' },
       { title: 'शतरंज' },
       { title: 'कैरम' },
@@ -190,7 +190,7 @@ const hi: Translations = {
     phoneLabel: 'फ़ोन',
     vistaAlt: 'सृष्टी फार्म हाउस की छत से सिंहगड किले का दृश्य',
     address: {
-      name: 'Srushti Farm House, Sinhgad, Donje',
+      name: 'Srushti Farm House, Sinhgad, Donje, Pune',
       line2: 'दोंजे, सिंहगड',
       line3: 'पुणे, महाराष्ट्र 411025',
     },
