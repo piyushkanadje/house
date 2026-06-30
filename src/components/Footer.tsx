@@ -57,14 +57,20 @@ export default function Footer() {
                 {t.location.address.line3}
               </li>
               <li>
-                {phones.map((p, i) => (
-                  <span key={p.number}>
-                    {i > 0 && ' · '}
-                    <a href={phoneLink(p.number)} className="hover:text-gold transition-colors">
-                      {p.number}
-                    </a>
-                  </span>
-                ))}
+                <span className="block text-white/40 text-xs mb-1">{t.contact.phonesCombinedLabel}</span>
+                <span className="leading-relaxed text-base font-medium">
+                  {phones.map((p, i) => (
+                    <span key={p.number}>
+                      {i > 0 && <span className="text-white/30"> / </span>}
+                      <a
+                        href={phoneLink(p.number)}
+                        className="hover:text-gold transition-colors whitespace-nowrap"
+                      >
+                        +91 {p.number}
+                      </a>
+                    </span>
+                  ))}
+                </span>
               </li>
               <li>
                 <a href={`mailto:${site.email}`} className="hover:text-gold transition-colors">

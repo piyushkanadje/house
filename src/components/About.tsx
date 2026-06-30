@@ -21,7 +21,8 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <div>
-            <SectionHeader eyebrow={t.about.eyebrow} title={t.about.title} align="left" className="mb-8" />
+            <SectionHeader eyebrow={t.about.eyebrow} title={t.about.title} align="left" className="mb-5" />
+            <p className="text-forest/75 leading-relaxed mb-8">{t.about.intro}</p>
             <div className="grid grid-cols-2 gap-3">
               {t.about.stats.map((stat) => (
                 <div
@@ -50,6 +51,7 @@ export default function About() {
                       index === activeIndex ? 'opacity-100 animate-ken-burns' : 'opacity-0'
                     }`}
                     loading={index === 0 ? 'eager' : 'lazy'}
+                    decoding="async"
                   />
                 ))}
               </div>
@@ -71,6 +73,23 @@ export default function About() {
                 />
               ))}
             </div>
+          </div>
+        </div>
+
+        <div className="mt-14">
+          <h3 className="font-serif text-forest text-xl sm:text-2xl mb-6 text-center">
+            {t.about.useCasesTitle}
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {t.about.useCases.map((useCase) => (
+              <div
+                key={useCase.title}
+                className="p-5 bg-white/80 backdrop-blur-sm rounded-xl border border-forest/10"
+              >
+                <h4 className="font-serif text-forest text-base sm:text-lg mb-1.5">{useCase.title}</h4>
+                <p className="text-sage text-sm leading-relaxed">{useCase.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

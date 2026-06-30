@@ -6,7 +6,7 @@ export default function SeoSchema() {
 
   const graphs = [
     buildWebSiteSchema(),
-    buildLodgingBusinessSchema(t.packages.items),
+    buildLodgingBusinessSchema(t.packages.items, t.meta.description),
     buildFaqSchema(t.policies.items),
   ]
 

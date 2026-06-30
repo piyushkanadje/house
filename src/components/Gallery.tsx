@@ -67,6 +67,7 @@ export default function Gallery() {
                   alt={item.alt}
                   className="absolute inset-0 h-full w-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
                   loading="lazy"
+                  decoding="async"
                 />
               )}
             </div>

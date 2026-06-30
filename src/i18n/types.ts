@@ -21,6 +21,17 @@ export interface AboutStat {
   value: string
 }
 
+export interface UseCase {
+  title: string
+  description: string
+}
+
+export interface NearbyPlace {
+  name: string
+  distance: string
+  description: string
+}
+
 export interface TestimonialTranslation {
   quote: string
   name: string
@@ -69,8 +80,19 @@ export interface Translations {
   about: {
     eyebrow: string
     title: string
+    intro: string
+    useCasesTitle: string
+    useCases: UseCase[]
     stats: AboutStat[]
     slides: { alt: string; caption: string }[]
+  }
+  nearby: {
+    eyebrow: string
+    title: string
+    intro: string
+    places: NearbyPlace[]
+    reachTitle: string
+    reachPoints: string[]
   }
   experiences: {
     title: string
@@ -109,6 +131,8 @@ export interface Translations {
   }
   testimonials: {
     title: string
+    seeMore: string
+    allReviewsTitle: string
     items: TestimonialTranslation[]
   }
   policies: {
@@ -132,16 +156,7 @@ export interface Translations {
     title: string
     whatsappBooking: string
     viewPackages: string
-    phoneLabels: {
-      bookings: string
-      reservations: string
-      inquiries: string
-    }
-    phonePurposes: {
-      bookings: string
-      reservations: string
-      inquiries: string
-    }
+    phonesCombinedLabel: string
   }
   footer: {
     tagline: string

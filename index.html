@@ -19,9 +19,12 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://srushtifarmhouse.in/" />
     <link rel="alternate" hreflang="en" href="https://srushtifarmhouse.in/" />
-    <link rel="alternate" hreflang="hi" href="https://srushtifarmhouse.in/?lang=hi" />
-    <link rel="alternate" hreflang="mr" href="https://srushtifarmhouse.in/?lang=mr" />
+    <link rel="alternate" hreflang="hi" href="https://srushtifarmhouse.in/hi/" />
+    <link rel="alternate" hreflang="mr" href="https://srushtifarmhouse.in/mr/" />
     <link rel="alternate" hreflang="x-default" href="https://srushtifarmhouse.in/" />
+
+    <!-- Google Search Console: replace the content token after verifying the property -->
+    <meta name="google-site-verification" content="REPLACE_WITH_SEARCH_CONSOLE_TOKEN" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Srushti Farm House" />
     <meta property="og:url" content="https://srushtifarmhouse.in/" />
@@ -48,6 +51,28 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Google Analytics 4. Replace G-XXXXXXXXXX with your Measurement ID to activate;
+         until then this stays inert and sends no data. -->
+    <script>
+      window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'
+    </script>
+    <script>
+      ;(function () {
+        var id = window.GA_MEASUREMENT_ID
+        window.dataLayer = window.dataLayer || []
+        window.gtag = function () {
+          window.dataLayer.push(arguments)
+        }
+        if (!id || id.indexOf('XXXX') !== -1) return // not configured yet
+        var s = document.createElement('script')
+        s.async = true
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id
+        document.head.appendChild(s)
+        window.gtag('js', new Date())
+        window.gtag('config', id)
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

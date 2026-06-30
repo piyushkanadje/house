@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Srushti Farm House</title>
+    <script>
+      // GitHub Pages SPA fallback. The locale pages (/, /hi/, /mr/) are prerendered
+      // real files; anything else lands here, so send it to that locale's home.
+      ;(function () {
+        var path = window.location.pathname
+        var target = '/'
+        if (path.indexOf('/hi') === 0) target = '/hi/'
+        else if (path.indexOf('/mr') === 0) target = '/mr/'
+        window.location.replace(target + window.location.hash)
+      })()
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="/">Srushti Farm House</a>…</p>
+  </body>
+</html>

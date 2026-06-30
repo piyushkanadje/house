@@ -2,10 +2,9 @@
 
 export const photoSources = [
   // Rooms
-  { file: 'ROOM 11.JPG', slug: 'room-11', category: 'rooms', alt: 'Guest room at Srushti Farm House Donje Pune' },
+  { file: 'rooms-dome-night.png', slug: 'rooms-dome-night', category: 'rooms', alt: 'Illuminated glow dome on the lawn at night at Srushti Farm House' },
   { file: 'ROOM112.JPG', slug: 'room-112', category: 'rooms', alt: 'Group stay room at Srushti Farm House Sinhgad' },
   { file: 'rooms 11.JPG', slug: 'rooms-11', category: 'rooms', alt: 'Rooms at Srushti Farm House near Sinhgad' },
-  { file: 'rooms .png', slug: 'rooms-collage', category: 'rooms', alt: 'Rooms veranda and bathroom collage at Srushti Farm House' },
   { file: 'rooms.JPG', slug: 'rooms-main', category: 'rooms', alt: 'Main guest room at Srushti Farm House' },
   { file: 'rooms2.JPG', slug: 'rooms-2', category: 'rooms', alt: 'Family room with multiple beds at Srushti Farm House' },
   { file: 'rooms3.JPG', slug: 'rooms-3', category: 'rooms', alt: 'Spacious group room at Srushti Farm House Pune' },

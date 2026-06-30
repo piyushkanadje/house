@@ -30,7 +30,7 @@ export default function Packages() {
                   {pkg.popular ? t.packages.mostPopular : t.packages.bestForFamilies}
                 </span>
               )}
-              <h3 className="font-serif text-xl mb-0.5">{pkg.name}</h3>
+              <h3 className="font-serif text-2xl sm:text-3xl mb-0.5">{pkg.name}</h3>
               <p className={`text-sm mb-4 ${pkg.popular ? 'text-forest/70' : 'text-white/60'}`}>
                 {pkg.timing}
               </p>

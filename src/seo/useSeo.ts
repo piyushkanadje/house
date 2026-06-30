@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { absoluteUrl, site } from '../data/siteContent'
+import { pathForLocale } from '../i18n/detectLanguage'
 import type { Locale } from '../i18n/types'
 
 interface SeoMeta {
@@ -32,8 +33,7 @@ function upsertLink(rel: string, href: string, hreflang?: string) {
 }
 
 function pageUrl(locale: Locale) {
-  if (locale === 'en') return absoluteUrl('/')
-  return absoluteUrl(`/?lang=${locale}`)
+  return absoluteUrl(pathForLocale(locale))
 }
 
 export function useSeo(locale: Locale, meta: SeoMeta) {
@@ -55,9 +55,9 @@ export function useSeo(locale: Locale, meta: SeoMeta) {
     upsertMeta('name', 'twitter:image', absoluteUrl(site.ogImage))
 
     upsertLink('canonical', pageUrl(locale))
-    upsertLink('alternate', absoluteUrl('/'), 'en')
-    upsertLink('alternate', absoluteUrl('/?lang=hi'), 'hi')
-    upsertLink('alternate', absoluteUrl('/?lang=mr'), 'mr')
-    upsertLink('alternate', absoluteUrl('/'), 'x-default')
+    upsertLink('alternate', pageUrl('en'), 'en')
+    upsertLink('alternate', pageUrl('hi'), 'hi')
+    upsertLink('alternate', pageUrl('mr'), 'mr')
+    upsertLink('alternate', pageUrl('en'), 'x-default')
   }, [locale, meta.title, meta.description])
 }

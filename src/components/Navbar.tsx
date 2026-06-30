@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
-import { navHrefs, phones, site, whatsappLink, phoneLink } from '../data/siteContent'
+import { navHrefs, phone, site, whatsappLink, phoneLink } from '../data/siteContent'
 import { useLanguage } from '../i18n/LanguageContext'
 import LanguageSwitcher from './LanguageSwitcher'
 
@@ -20,10 +20,10 @@ export default function Navbar() {
           <a href="#top" className="flex items-center gap-3 group">
             <img src={site.logo} alt={site.name} className="h-10 sm:h-11 w-auto object-contain" />
             <div className="text-left min-w-0">
-              <span className="block font-serif text-sm sm:text-base text-white leading-tight">
+              <span className="block font-serif text-base sm:text-lg lg:text-xl text-white leading-tight">
                 {site.navBrandLine1}
               </span>
-              <span className="block text-[10px] sm:text-xs text-gold/90 leading-snug mt-0.5">
+              <span className="block text-xs sm:text-sm lg:text-base text-gold/90 leading-snug mt-0.5">
                 {site.navBrandLine2}
               </span>
             </div>
@@ -52,7 +52,7 @@ export default function Navbar() {
               {t.common.bookOnWhatsApp}
             </a>
             <a
-              href={phoneLink(phones[0].number)}
+              href={phoneLink(phone)}
               className="inline-flex items-center gap-2 px-5 py-2.5 border border-white/30 text-white text-sm font-semibold rounded-full hover:bg-white/10 transition-colors"
             >
               <Phone className="w-4 h-4" />
@@ -95,7 +95,7 @@ export default function Navbar() {
             {t.common.bookOnWhatsApp}
           </a>
           <a
-            href={phoneLink(phones[0].number)}
+            href={phoneLink(phone)}
             className="flex items-center justify-center gap-2 w-full py-3 border border-white/30 text-white font-semibold rounded-full"
           >
             <Phone className="w-4 h-4" />

@@ -6,6 +6,7 @@ import Packages from './components/Packages'
 import Gallery from './components/Gallery'
 import Testimonials from './components/Testimonials'
 import Policies from './components/Policies'
+import Nearby from './components/Nearby'
 import Location from './components/Location'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -24,6 +25,7 @@ export default function App() {
         <Gallery />
         <About />
         <Testimonials />
+        <Nearby />
         <Location />
         <Contact />
         <Policies />

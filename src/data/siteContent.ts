@@ -12,6 +12,7 @@ export const site = {
     'https://www.google.com/maps?q=Srushti+Farm+House,+Sinhgad,+Donje,+Pune&output=embed',
   mapsDirections: 'https://maps.app.goo.gl/5uZjdHJuyxR4ScDP7',
   googleMapsUrl: 'https://maps.app.goo.gl/5uZjdHJuyxR4ScDP7',
+  googleReviewsUrl: 'https://maps.app.goo.gl/5uZjdHJuyxR4ScDP7',
   geo: {
     latitude: 18.4371,
     longitude: 73.7553,
@@ -40,10 +41,12 @@ export const site = {
 }
 
 export const phones = [
-  { key: 'bookings' as const, number: '7767994666' },
-  { key: 'reservations' as const, number: '9404953555' },
-  { key: 'inquiries' as const, number: '7058863476' },
-]
+  { key: 'booking', number: '7767994666' },
+  { key: 'reservation', number: '9404953555' },
+  { key: 'inquiries', number: '7058863476' },
+] as const
+
+export const phone = phones[0].number
 
 export const aboutSlides = [
   '/assets/gallery/photos/pool-deck-view.jpg',
@@ -64,7 +67,7 @@ export const navHrefs = [
   { href: '#contact', key: 'contact' as const },
 ]
 
-const BOOKING_PHONE = '917767994666'
+const BOOKING_PHONE = `91${phone}`
 
 export function whatsappLink(message: string) {
   return `https://wa.me/${BOOKING_PHONE}?text=${encodeURIComponent(message)}`

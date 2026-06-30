@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import { ChevronDown, Pause, Play, Phone, Volume2, VolumeX } from 'lucide-react'
-import { site, phones, whatsappLink, phoneLink } from '../data/siteContent'
+import { site, phone, whatsappLink, phoneLink } from '../data/siteContent'
 import { useLanguage } from '../i18n/LanguageContext'
 import { useMediaQuery } from '../hooks/useMediaQuery'
 
@@ -51,7 +51,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/25 to-forest/85" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center text-white pt-24 pb-28">
-        <p className="eyebrow mb-4 text-gold-light text-sm! sm:text-base! md:text-lg! lg:text-xl!">{t.hero.tagline}</p>
+        <p className="eyebrow mb-4 text-gold-light font-bold text-sm! sm:text-base! md:text-lg! lg:text-xl!">{t.hero.tagline}</p>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight mb-5">
           {t.hero.title}
         </h1>
@@ -69,7 +69,7 @@ export default function Hero() {
             {t.hero.bookStay}
           </a>
           <a
-            href={phoneLink(phones[0].number)}
+            href={phoneLink(phone)}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 border border-white/40 text-white rounded-full hover:bg-white/10 transition-colors"
           >
             <Phone className="w-5 h-5" />
