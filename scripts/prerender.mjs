@@ -7,10 +7,36 @@
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { preview } from 'vite'
-import puppeteer from 'puppeteer'
+import puppeteer from 'puppeteer-core'
 
 const PORT = Number(process.env.PRERENDER_PORT ?? 4178)
 const distDir = process.env.DIST_DIR ?? 'dist'
+
+// Vercel / AWS Lambda build images have no system libraries for Chrome, so use
+// @sparticuz/chromium there. Locally, drive an installed Chrome (or a path from
+// PUPPETEER_EXECUTABLE_PATH).
+const isServerless = !!(
+  process.env.VERCEL ||
+  process.env.AWS_LAMBDA_FUNCTION_NAME ||
+  process.env.AWS_EXECUTION_ENV
+)
+
+async function launchBrowser() {
+  if (isServerless) {
+    const { default: chromium } = await import('@sparticuz/chromium')
+    return puppeteer.launch({
+      args: [...chromium.args, '--no-sandbox', '--disable-setuid-sandbox'],
+      executablePath: await chromium.executablePath(),
+      headless: chromium.headless ?? true,
+    })
+  }
+  const executablePath = process.env.PUPPETEER_EXECUTABLE_PATH
+  return puppeteer.launch({
+    ...(executablePath ? { executablePath } : { channel: 'chrome' }),
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  })
+}
 
 // route on the preview server -> output file relative to distDir
 const ROUTES = [
@@ -21,10 +47,7 @@ const ROUTES = [
 
 const server = await preview({ preview: { port: PORT, strictPort: true } })
 
-const browser = await puppeteer.launch({
-  headless: true,
-  args: ['--no-sandbox', '--disable-setuid-sandbox'],
-})
+const browser = await launchBrowser()
 
 try {
   for (const route of ROUTES) {
