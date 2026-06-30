@@ -138,7 +138,7 @@ These steps are required to rank for brand + local queries like “farmhouse nea
 2. Use exact NAP matching the site:
    - **Name:** Srushti Farm House
    - **Address:** Survey No. 412, Panshet Road, Opposite Surajya Apt., Donje, Sinhgad, Pune 411025
-   - **Phone:** +91 7767994666 (bookings)
+   - **Phone (Booking/Reservation/Inquiries):** +91 7767994666 / +91 9404953555 / +91 7058863476
 3. Add 20+ photos (pool, rooms, food, activities)
 4. Enable messaging; post weekly updates
 5. Ask every guest for a review; respond to all reviews
@@ -177,3 +177,4 @@ After deploy, test rich results:
 - Tailwind CSS 4
 - Lucide React icons
 - GitHub Actions for CI/CD
+# house
