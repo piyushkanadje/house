@@ -12,17 +12,17 @@ import puppeteer from 'puppeteer-core'
 const PORT = Number(process.env.PRERENDER_PORT ?? 4178)
 const distDir = process.env.DIST_DIR ?? 'dist'
 
-// Vercel / AWS Lambda build images have no system libraries for Chrome, so use
-// @sparticuz/chromium there. Locally, drive an installed Chrome (or a path from
-// PUPPETEER_EXECUTABLE_PATH).
-const isServerless = !!(
-  process.env.VERCEL ||
-  process.env.AWS_LAMBDA_FUNCTION_NAME ||
-  process.env.AWS_EXECUTION_ENV
-)
+// Linux build images (Vercel, AWS Lambda, most CI) have no system libraries for
+// a normal Chrome, so use the self-contained @sparticuz/chromium there. Only use
+// a locally installed Chrome on macOS / Windows dev, or an explicit path override.
+// Platform is the reliable signal — env vars like VERCEL may not be exposed.
+const localExecutable = process.env.PUPPETEER_EXECUTABLE_PATH
+const useLocalChrome =
+  !!localExecutable || process.platform === 'darwin' || process.platform === 'win32'
 
 async function launchBrowser() {
-  if (isServerless) {
+  if (!useLocalChrome) {
+    console.log('[prerender] launching @sparticuz/chromium (serverless)')
     const { default: chromium } = await import('@sparticuz/chromium')
     return puppeteer.launch({
       args: [...chromium.args, '--no-sandbox', '--disable-setuid-sandbox'],
@@ -30,9 +30,9 @@ async function launchBrowser() {
       headless: chromium.headless ?? true,
     })
   }
-  const executablePath = process.env.PUPPETEER_EXECUTABLE_PATH
+  console.log(`[prerender] launching local Chrome (${localExecutable || 'channel: chrome'})`)
   return puppeteer.launch({
-    ...(executablePath ? { executablePath } : { channel: 'chrome' }),
+    ...(localExecutable ? { executablePath: localExecutable } : { channel: 'chrome' }),
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   })
