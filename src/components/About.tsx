@@ -50,7 +50,7 @@ export default function About() {
                     className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[900ms] ease-in-out ${
                       index === activeIndex ? 'opacity-100 animate-ken-burns' : 'opacity-0'
                     }`}
-                    loading={index === 0 ? 'eager' : 'lazy'}
+                    loading="lazy"
                     decoding="async"
                   />
                 ))}
@@ -59,18 +59,22 @@ export default function About() {
             <p className="text-center font-serif text-forest/80 text-sm mt-3 tracking-wide">
               {t.about.slides[activeIndex]?.caption}
             </p>
-            <div className="flex justify-center gap-2 mt-3">
+            <div className="flex justify-center gap-1 mt-3">
               {aboutSlides.map((src, index) => (
                 <button
                   key={src}
                   type="button"
                   onClick={() => setActiveIndex(index)}
-                  className={`h-2 rounded-full transition-all ${
-                    index === activeIndex ? 'w-6 bg-forest' : 'w-2 bg-forest/25 hover:bg-forest/40'
-                  }`}
+                  className="grid place-items-center h-11 w-11 rounded-full"
                   aria-label={`Show slide ${index + 1}`}
                   aria-current={index === activeIndex ? 'true' : undefined}
-                />
+                >
+                  <span
+                    className={`block h-2 rounded-full transition-all ${
+                      index === activeIndex ? 'w-6 bg-forest' : 'w-2 bg-forest/30'
+                    }`}
+                  />
+                </button>
               ))}
             </div>
           </div>

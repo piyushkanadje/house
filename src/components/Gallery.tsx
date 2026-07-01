@@ -57,7 +57,7 @@ export default function Gallery() {
                   poster={item.poster}
                   controls
                   playsInline
-                  preload="metadata"
+                  preload="none"
                   className="absolute inset-0 h-full w-full object-cover"
                   aria-label={item.alt}
                 />

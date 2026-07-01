@@ -31,12 +31,12 @@ export default function Packages() {
                 </span>
               )}
               <h3 className="font-serif text-2xl sm:text-3xl mb-0.5">{pkg.name}</h3>
-              <p className={`text-sm mb-4 ${pkg.popular ? 'text-forest/70' : 'text-white/60'}`}>
+              <p className={`text-sm mb-4 ${pkg.popular ? 'text-forest/70' : 'text-white/80'}`}>
                 {pkg.timing}
               </p>
               <div className="mb-5">
                 <span className="text-4xl font-serif font-semibold">₹{formatPrice(pkg.price)}</span>
-                <span className={`text-sm ml-1 ${pkg.popular ? 'text-forest/70' : 'text-white/60'}`}>
+                <span className={`text-sm ml-1 ${pkg.popular ? 'text-forest/70' : 'text-white/80'}`}>
                   {t.common.perPerson}
                 </span>
               </div>
@@ -54,6 +54,7 @@ export default function Packages() {
                 href={whatsappLink(pkg.whatsappMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Book ${pkg.name} on WhatsApp`}
                 className={`inline-flex items-center justify-center gap-2 w-full py-3 rounded-full font-semibold text-sm transition-colors mt-auto ${
                   pkg.popular
                     ? 'bg-forest text-white hover:bg-forest-dark'

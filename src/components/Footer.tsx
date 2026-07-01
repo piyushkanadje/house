@@ -17,26 +17,32 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
             <a href="#top" className="flex items-center gap-3 mb-4">
-              <img src={site.logo} alt={site.name} className="h-10 sm:h-11 w-auto object-contain" />
+              <img
+                src={site.logo}
+                alt={site.name}
+                width={220}
+                height={160}
+                className="h-10 sm:h-11 w-auto object-contain"
+              />
               <div className="min-w-0">
                 <span className="block font-serif text-sm sm:text-base text-white leading-tight">
                   {site.navBrandLine1}
                 </span>
-                <span className="block text-[10px] sm:text-xs text-gold/90 leading-snug mt-0.5">
+                <span className="block text-[10px] sm:text-xs text-gold-light leading-snug mt-0.5">
                   {site.navBrandLine2}
                 </span>
               </div>
             </a>
-            <p className="text-white/60 text-sm leading-relaxed">{t.footer.description}</p>
-            <p className="text-white/30 text-xs mt-2 tracking-wide">{t.footer.seoLine}</p>
+            <p className="text-white/75 text-sm leading-relaxed">{t.footer.description}</p>
+            <p className="text-white/60 text-xs mt-2 tracking-wide">{t.footer.seoLine}</p>
           </div>
 
           <div>
-            <h4 className="font-serif text-lg mb-4">{t.footer.explore}</h4>
+            <h3 className="font-serif text-lg mb-4">{t.footer.explore}</h3>
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-sm text-white/60 hover:text-gold transition-colors">
+                  <a href={link.href} className="text-sm text-white/75 hover:text-gold transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -45,8 +51,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-serif text-lg mb-4">{t.footer.contact}</h4>
-            <ul className="space-y-2 text-sm text-white/60">
+            <h3 className="font-serif text-lg mb-4">{t.footer.contact}</h3>
+            <ul className="space-y-2 text-sm text-white/75">
               <li>
                 {t.location.address.name}
                 <br />
@@ -57,11 +63,11 @@ export default function Footer() {
                 {t.location.address.line3}
               </li>
               <li>
-                <span className="block text-white/40 text-xs mb-1">{t.contact.phonesCombinedLabel}</span>
+                <span className="block text-white/70 text-xs mb-1">{t.contact.phonesCombinedLabel}</span>
                 <span className="leading-relaxed text-base font-medium">
                   {phones.map((p, i) => (
                     <span key={p.number}>
-                      {i > 0 && <span className="text-white/30"> / </span>}
+                      {i > 0 && <span className="text-white/60"> / </span>}
                       <a
                         href={phoneLink(p.number)}
                         className="hover:text-gold transition-colors whitespace-nowrap"
@@ -91,7 +97,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-serif text-lg mb-4">{t.footer.connect}</h4>
+            <h3 className="font-serif text-lg mb-4">{t.footer.connect}</h3>
             <a
               href={whatsappLink(t.whatsapp.default)}
               target="_blank"
@@ -102,11 +108,11 @@ export default function Footer() {
               <MessageCircle className="w-5 h-5" />
             </a>
             <SocialFollow variant="inline" />
-            <p className="text-xs text-white/40 mt-3 leading-relaxed">{t.footer.followInstagram}</p>
+            <p className="text-xs text-white/70 mt-3 leading-relaxed">{t.footer.followInstagram}</p>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 text-center sm:text-left text-sm text-white/40">
+        <div className="border-t border-white/10 pt-8 text-center sm:text-left text-sm text-white/70">
           <p>
             &copy; {new Date().getFullYear()} {site.name}. {t.common.allRightsReserved}
           </p>

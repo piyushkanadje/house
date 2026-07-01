@@ -18,7 +18,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <a href="#top" className="flex items-center gap-3 group">
-            <img src={site.logo} alt={site.name} className="h-10 sm:h-11 w-auto object-contain" />
+            <img
+              src={site.logo}
+              alt={site.name}
+              width={220}
+              height={160}
+              className="h-10 sm:h-11 w-auto object-contain"
+            />
             <div className="text-left min-w-0">
               <span className="block font-serif text-base sm:text-lg lg:text-xl text-white leading-tight">
                 {site.navBrandLine1}
